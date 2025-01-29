@@ -1,14 +1,14 @@
 {
   "meta": {
-    "brightAuthorVersion": "1.49.0",
+    "brightAuthorVersion": "1.49.1",
     "buildType": "Standard"
   },
   "bsdm": {
     "sign": {
       "properties": {
-        "id": "7f6f1874-e7ff-4000-aaff-ffdf08b0d000",
+        "id": "6ccef9f1-bcb3-4000-a29f-5d67acbcf000",
         "version": "1.3.10",
-        "name": "TC Test",
+        "name": "Test",
         "videoMode": "1920x1080x60p",
         "size": {
           "width": 1920,
@@ -506,7 +506,7 @@
         }
       },
       "wssDeviceSpec": {},
-      "lastModifiedTime": "2024-12-02T21:02:24.234Z"
+      "lastModifiedTime": "2025-01-29T02:55:29.677Z"
     },
     "zones": {
       "zonesById": {
@@ -771,7 +771,7 @@
           "params": [
             {
               "type": "Text",
-              "value": "store="
+              "value": "location="
             },
             {
               "type": "UserVariable",
@@ -779,7 +779,11 @@
             },
             {
               "type": "Text",
-              "value": "&sku=2738738&size=1920x270&lang=en&template=thirststop"
+              "value": "&content="
+            },
+            {
+              "type": "UserVariable",
+              "value": "9cc032d1-4091-4000-ab11-8475b0d0f000"
             }
           ]
         },
@@ -787,7 +791,7 @@
           "params": [
             {
               "type": "Text",
-              "value": "https://app-omni-dev.azurewebsites.net/circle-k/Circle-K/ad?"
+              "value": "https://www.mycms.biz"
             }
           ]
         }
@@ -901,7 +905,14 @@
         "selectableData": null
       }
     },
-    "prevSelectionEntities": {},
+    "prevSelectionEntities": {
+      "47d89278-95e6-4000-aec3-9acf0f912000": {
+        "id": "47d89278-95e6-4000-aec3-9acf0f912000",
+        "type": "Event",
+        "selectableType": "TRANSITION",
+        "selectableData": null
+      }
+    },
     "isEventAdvancedEnabled": false,
     "activeAssetMenuTab": "ASSETS"
   },
@@ -931,8 +942,8 @@
     },
     "viewTransformByZoneId": {
       "98d38775-048f-4000-a14d-272b1a23c000": {
-        "x": 0,
-        "y": 0,
+        "x": 711,
+        "y": 402,
         "k": 1
       }
     },
