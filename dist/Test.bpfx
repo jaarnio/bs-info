@@ -506,7 +506,7 @@
         }
       },
       "wssDeviceSpec": {},
-      "lastModifiedTime": "2025-01-29T02:55:29.677Z"
+      "lastModifiedTime": "2025-01-31T05:16:51.434Z"
     },
     "zones": {
       "zonesById": {
@@ -771,19 +771,11 @@
           "params": [
             {
               "type": "Text",
-              "value": "location="
+              "value": "q="
             },
             {
               "type": "UserVariable",
-              "value": "a071c3cb-19dd-4000-a94a-9059e438c000"
-            },
-            {
-              "type": "Text",
-              "value": "&content="
-            },
-            {
-              "type": "UserVariable",
-              "value": "9cc032d1-4091-4000-ab11-8475b0d0f000"
+              "value": "8c02f1e8-0ab4-4000-a9e6-ad980e549000"
             }
           ]
         },
@@ -791,7 +783,7 @@
           "params": [
             {
               "type": "Text",
-              "value": "https://www.mycms.biz"
+              "value": "https://google.com/search?"
             }
           ]
         }
@@ -843,11 +835,24 @@
           "dataFeedId": "0",
           "systemVariable": null,
           "data": null
+        },
+        "8c02f1e8-0ab4-4000-a9e6-ad980e549000": {
+          "id": "8c02f1e8-0ab4-4000-a9e6-ad980e549000",
+          "name": "bs-resolution",
+          "defaultValue": {
+            "params": []
+          },
+          "access": "Private",
+          "isNetworked": false,
+          "dataFeedId": "0",
+          "systemVariable": null,
+          "data": null
         }
       },
       "sequence": [
         "9cc032d1-4091-4000-ab11-8475b0d0f000",
-        "a071c3cb-19dd-4000-a94a-9059e438c000"
+        "a071c3cb-19dd-4000-a94a-9059e438c000",
+        "8c02f1e8-0ab4-4000-a9e6-ad980e549000"
       ]
     },
     "liveText": {
@@ -905,14 +910,7 @@
         "selectableData": null
       }
     },
-    "prevSelectionEntities": {
-      "47d89278-95e6-4000-aec3-9acf0f912000": {
-        "id": "47d89278-95e6-4000-aec3-9acf0f912000",
-        "type": "Event",
-        "selectableType": "TRANSITION",
-        "selectableData": null
-      }
-    },
+    "prevSelectionEntities": {},
     "isEventAdvancedEnabled": false,
     "activeAssetMenuTab": "ASSETS"
   },
@@ -942,8 +940,8 @@
     },
     "viewTransformByZoneId": {
       "98d38775-048f-4000-a14d-272b1a23c000": {
-        "x": 711,
-        "y": 402,
+        "x": 0,
+        "y": 0,
         "k": 1
       }
     },

@@ -1,6 +1,10 @@
 // These are built into the OS of the player
 const diClass = require("@brightsign/deviceinfo");
+
 const registryClass = require("@brightsign/registry");
+
+var VideoModeConfigurationClass = require("@brightsign/videomodeconfiguration");
+var videoConfig = new VideoModeConfigurationClass();
 
 // External dependencies
 const axios = require("axios");
@@ -25,9 +29,21 @@ const postToSetValues = async (payload) => {
         maxRedirects: 10,
       }
     );
-    console.log("Response:", response.data);
+    //console.log("Response:", response.data);
   } catch (error) {
     console.error("Error:", error);
+  }
+};
+
+const getVideoMode = async () => {
+  try {
+    let currentRes = await videoConfig.getConfiguredMode();
+    console.log("Current Resolution:", currentRes);
+    await postToSetValues({
+      "bs-resolution": currentRes.modeName,
+    });
+  } catch (error) {
+    console.log(JSON.stringify(data));
   }
 };
 
@@ -57,8 +73,9 @@ const getRegistryKey = async (section, key) => {
 
 // Main function to control the application flow
 const main = async () => {
-  await getSerialNumber();
-  await getRegistryKey("networking", "ud");
+  //await getSerialNumber();
+  //await getRegistryKey("networking", "ud");
+  await getVideoMode();
 };
 
 // Run the main function

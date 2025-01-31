@@ -10,5 +10,6 @@ module.exports = {
   externals: {
     "@brightsign/deviceinfo": "commonjs @brightsign/deviceinfo",
     "@brightsign/registry": "commonjs @brightsign/registry",
+    "@brightsign/videomodeconfiguration": "commonjs @brightsign/videomodeconfiguration",
   },
 };
