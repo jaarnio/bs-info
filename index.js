@@ -40,7 +40,8 @@ const getVideoMode = async () => {
     let currentRes = await videoConfig.getConfiguredMode();
     console.log("Current Resolution:", currentRes);
     await postToSetValues({
-      "bs-resolution": currentRes.modeName,
+      // modified to just return width and height
+      "bs-resolution": currentRes.width + "x" + currentRes.height,
     });
   } catch (error) {
     console.log(JSON.stringify(data));
@@ -74,7 +75,7 @@ const getRegistryKey = async (section, key) => {
 // Main function to control the application flow
 const main = async () => {
   //await getSerialNumber();
-  //await getRegistryKey("networking", "ud");
+  await getRegistryKey("networking", "ud");
   await getVideoMode();
 };
 
