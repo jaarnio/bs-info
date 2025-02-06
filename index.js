@@ -37,7 +37,7 @@ const postToSetValues = async (payload) => {
 
 const getVideoMode = async () => {
   try {
-    let currentRes = await videoConfig.getConfiguredMode();
+    let currentRes = await videoConfig.getActiveMode();
     console.log("Current Resolution:", currentRes);
     await postToSetValues({
       // modified to just return width and height
